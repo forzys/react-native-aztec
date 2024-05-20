@@ -2,8 +2,9 @@
 	"name": "@wordpress/react-native-aztec",
 	"version": "1.118.0",
 	"description": "Aztec view for react-native.",
-	"private": true,
 	"author": "The WordPress Contributors",
+	"main": "index.js",
+	"typings": "src/AztecView.d.ts",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"wordpress",
@@ -18,13 +19,15 @@
 	"bugs": {
 		"url": "https://github.com/WordPress/gutenberg/issues"
 	},
-	"dependencies": {
-		"@wordpress/element": "file:../element",
-		"@wordpress/keycodes": "file:../keycodes"
+	"dependencies": { 
+		"@wordpress/compose": "6.31.0",
+		"@wordpress/element": "5.31.0",
+		"@wordpress/keycodes": "3.54.0"
 	},
 	"peerDependencies": {
 		"react": "*",
-		"react-native": "*"
+		"react-native": "*",
+		"react-native-wordpress-bridge": "1.116.5"
 	},
 	"publishConfig": {
 		"access": "public"
