@@ -1,19 +1,19 @@
 pluginManagement {
     gradle.ext.kotlinVersion = '1.8.0'
     gradle.ext.agpVersion = '8.1.0'
-    gradle.ext.automatticPublishToS3Version = '0.8.0'
+    // gradle.ext.automatticPublishToS3Version = '0.8.0'
 
     plugins {
         id "com.android.library" version gradle.ext.agpVersion
         id "org.jetbrains.kotlin.android" version gradle.ext.kotlinVersion
-        id "com.automattic.android.publish-to-s3" version gradle.ext.automatticPublishToS3Version
+        // id "com.automattic.android.publish-to-s3" version gradle.ext.automatticPublishToS3Version
     }
     repositories {
         maven {
             url 'https://a8c-libs.s3.amazonaws.com/android'
             content {
                 includeGroup "com.automattic.android"
-                includeGroup "com.automattic.android.publish-to-s3"
+                // includeGroup "com.automattic.android.publish-to-s3"
             }
         }
         gradlePluginPortal()
@@ -21,4 +21,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = '@wordpress_react-native-aztec'
+rootProject.name = 'react-native-aztec'
